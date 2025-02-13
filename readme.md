@@ -35,7 +35,7 @@ This procedure resets filter on Xiaomi Air Purifiers
 PWD: 086FDB8A
 ```
 
-4. pm3: `hf mfu rdbl -b 8 --data 00000000 -k 086FDB8A` - should be non-zero, i.e.:
+4. pm3: `hf mfu rdbl -b 8 -k 086FDB8A` - should be non-zero, i.e.:
 
 ```
 [=] Using pwd 08 6F DB 8A 

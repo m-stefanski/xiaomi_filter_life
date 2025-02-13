@@ -54,4 +54,14 @@ PWD: 086FDB8A
 [?] Try `hf mfu rdbl -b 8` to verify 
 ```
 
-6. Filter is now at 100%
+6. pm3: `hf mfu rdbl -b 8 -k 086FDB8A` - should be **zero**, i.e.:
+
+```
+[=] Using pwd 08 6F DB 8A 
+
+[=] Block#  | Data        | Ascii
+[=] -----------------------------
+[=] 08/0x08 | 00 00 00 00 | ....
+```
+
+7. Filter is now at 100%

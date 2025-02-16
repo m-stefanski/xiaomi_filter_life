@@ -1,4 +1,6 @@
-This procedure resets filter on Xiaomi Air Purifiers
+This procedure resets lifetime of Xiaomi Air Purifier filters.
+
+Due to their interchangeability, this solution should work all filters designed for Xiaomi 1/2/2S/2C/3/3C/3H Pro.
 
 ## Prerequisites
 

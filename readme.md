@@ -2,10 +2,33 @@ This procedure resets filter on Xiaomi Air Purifiers
 
 ## Prerequisites
 
-* Proxmark3 hw + sw (commands marked as `pm3`)
+* Proxmark3 hw + sw (command `pm3` must be available)
 * Python
 
-## Procedure
+## Automatic procedure
+
+1. Position your proxmark3 device with hf antenna centered and around 1,5-2 cm above NXP RFID logo on the bottom of the filter:
+
+![Proxmark3 Position](docs/proxmark_position.jpg)
+
+2. Run `python3 ./autopwn.py` (you can add `-v` if you are curious what is happening)
+
+3. Wait for success message
+
+```
+INFO: checking if proxmark3 software is installed
+INFO: checking if proxmark3 is connected...
+INFO: proxmark3 found
+INFO: scanning for filter tags...
+INFO: UID found: 048968B2BA6C80
+INFO: calculated password: 086FDB8A
+INFO: setting block 8 to '00 00 00 00'...
+INFO: reading block 8 to verify...
+INFO: SUCCESS! Filter life has been restored
+```
+
+
+## Manual procedure
 
 1. sh: `pm3`
 2. pm3: `hf search`
